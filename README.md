@@ -129,7 +129,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）：
 
 URL即图片的url地址，如果引用本仓库中的图片，直接使用**相对路径**就可了，如果引用其他github仓库中的图片要注意格式，即：`仓库地址/raw/分支名/图片路径`，如：
 ```
-https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
+https://github.com/yindajies/ImageCache/raw/master/Logo/foryou.gif
 ```
 
 |#|语法|效果|
@@ -138,29 +138,17 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 |2|`![][foryou]`|![][foryou]
 
 注意例2的写法使用了**URL标识符**的形式，在[链接](#链接)一节有介绍。
->在文末有foryou的定义：
-```
-[foryou]:https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
-```
-
-链接
-------
-### 链接外部URL
-
-|#|语法|效果|
-|---|----|-----|
-|1|`[我的知乎][zhihu] `|[我的知乎][zhihu] |
-
->使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
->>URL标识符是我起的名字，不知道是否准确。
 
 ### 图片链接
-给图片加链接的本质是混合图片显示语法和普通的链接语法。普通的链接中[ ]内部是链接要显示的文本，而图片链接[ ]里面则是要显示的图片。  
+给图片加链接的本质是混合
+链接
+------
+图片显示语法和普通的链接语法。普通的链接中[ ]内部是链接要显示的文本，而图片链接[ ]里面则是要显示的图片。  
 直接混合两种语法当然可以，但是十分啰嗦，为此我们可以使用URL标识符的形式。
 
 |#|语法|效果|
 |---|----|:---:|
-|1|`[![weibo-logo]](http://weibo.com/linpiaochen)`|[![weibo-logo]](http://weibo.com/linpiaochen)|
+|1|`[![weibo-logo]](http://weibo.com/)`|[![weibo-logo]](http://weibo.com/linpiaochen)|
 |2|`[![](/img/zhihu.png "我的知乎，欢迎关注")][zhihu]`|[![](/img/zhihu.png "我的知乎，欢迎关注")][zhihu]|
 |3|`[![csdn-logo]][csdn]`|[![csdn-logo]][csdn]|
 
@@ -181,14 +169,13 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 ## 列表
 ### 无序列表
 * 昵称：翱如萱
-- 别名：隔壁老王
+- 别名：是萱哥不是萱姐
 * 英文名：Jelly
 
 ### 多级无序列表
 * 编程语言
     * 脚本语言
-        * c#
-
+    	* c#
 ### 有序列表
 #### 一般效果
 就是在数字后面加一个点，再加一个空格。不过看起来起来可能不够明显。    
